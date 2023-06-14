@@ -1,0 +1,225 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top p-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll text-primary" href="index.html">PMV</a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+            aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link js-scroll active text-primary" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll text-primary" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll text-primary" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll text-primary" href="work1.html">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll text-primary" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll text-primary" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="paralax-mf footer-paralax bg-image sect-mt4 route pt-3" style="background-image: url(img/overlay-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="contact-mf">
+                <div id="contact" class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                          Send Message Us
+                        </h5>
+                      </div>
+                      <div>
+                          <form role="form" id="g-form" class="contactForm" onsubmit="validateForm()">
+                          <div id="sendmessage">Your message has been sent. Thank you!</div>
+                          <div id="errormessage"></div>
+                          <div class="row">
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                                <div class="validation"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
+                                <div class="validation"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required>
+                                  <div class="validation"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" id="message" data-msg="Please write something for us" placeholder="Message" required></textarea>
+                                <div class="validation"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="title-box-2 pt-4 pt-md-0">
+                        <h5 class="title-left">
+                          Get in Touch
+                        </h5>
+                      </div>
+                      <div class="more-info">
+                        
+                        <ul class="list-ico">
+                            <li>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9680689812058!2d77.64652197486974!3d12.909773816231171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15f3e4616b8d%3A0xa31fdff6f4cd4a7d!2sHustlehub!5e0!3m2!1sen!2sin!4v1686747437265!5m2!1sen!2sin" width="300" height="250" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              </li>
+                          <li><span class="ion-ios-location"></span> HustleHub Teck Park</li>
+                          <li><span class="ion-ios-telephone"></span><a href="tel://+91 860 6259 433">+91 860 6259 433</a></li>
+                          <li><span class="ion-email"></span><a href="mailto:prasanthmv548@gmail.com">prasanthmv548@gmail.com</li>
+                        </ul>
+                      </div>
+                      <div class="socials">
+                        <ul>
+                          <li><a href="https://www.facebook.com/prasanth.mv.7731"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                          <li><a href="https://www.instagram.com/pra_sa_nth_mv/"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                         
+                        </ul>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="copyright-box">
+                  <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+                  <div class="credits">
+                   
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/popper/popper.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/counterup/jquery.waypoints.min.js"></script>
+<script src="lib/counterup/jquery.counterup.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/typed/typed.min.js"></script>
+
+<script>
+    function validateForm()
+       {
+          
+           var name =document.getElementById("name").value;
+           var nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
+           var email=document.getElementById("email").value;
+            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            var subject=document.getElementById("subject").value;
+            var message=document.getElementById("message").value;
+           if (!name.match(nameRegex)) {
+                alert("Enter a proper name");
+
+               return false;  
+           }
+           else if (!email.match(validRegex)) {
+                
+               alert("Please enter a valid email address.");
+               return false;
+           }
+             else  if (subject == null || subject == "") {
+               var inputElement = document.getElementById("subject");
+               inputElement.placeholder = "Enter a subject";
+               return false;
+           }
+          else  if(message ==null || message =="")
+           {
+               var inputElement = document.getElementById("message");
+               inputElement.placeholder = "Enter a Message";
+                return false;
+           }
+          
+       }
+
+  </script>
+  <script>
+   jQuery('#g-form').on('submit',function(e)
+   {
+       e.preventDefault();
+      jQuery.ajax(
+       {
+           url:'https://script.google.com/macros/s/AKfycbxhxI5l_Q65Zs9gXs_ntnY4ipprEmm7ERP9xsfincgRKOp0D3uMoymz1Z7EI0fFbQoV/exec',
+           data: jQuery('#g-form').serialize(),
+           method:"post",
+           
+           success:function(response){
+              window.location.reload();
+             alert("form completed");
+           },
+           error:function(err){
+               alert("Something Wrong");
+           }
+       });
+   }
+   );
+
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
